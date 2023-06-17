@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="application-name" content="Antx">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <link rel="icon" href="https://image.antx.cc/logo/antx/favicon.ico" type="image/gif">
+    <script src="https://cdn.antx.cc/libs/jquery/3.1.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="//g.alicdn.com/aliyun/console-act/1.0.0/act.min.css" />
+  <script src="//g.alicdn.com/aliyun/console-act/1.0.0/act.min.js"></script>
+    <script>// 弹出提示框
+    ACT.Dialog.alert({
+      title: '提示',
+      content: '这是一个提示框',
+      onOk: function() {
+        console.log('点击了确定按钮');
+      }
+    });
+
+    // 弹出确认框
+    ACT.Dialog.confirm({
+      title: '确认',
+      content: '确定要删除吗？',
+      onOk: function() {
+        console.log('点击了确定按钮');
+      },
+      onCancel: function() {
+        console.log('点击了取消按钮');
+      }
+    });</script>
+</head>
+<body>
+</body>
+</html>
